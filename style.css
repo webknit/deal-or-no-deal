@@ -4,3 +4,29 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	margin: 2em auto 0;
 	max-width: 700px;
 }
+
+p, h2, ul {
+	margin-bottom: 0.5em;
+}
+
+li {
+	cursor: pointer;
+}
+
+.chosen-num-box,
+.amounts-left,
+.take-money,
+.continue-game,
+.play-again,
+.swap-open-boxes,
+.open-boxes {
+	display: none;
+}
+
+.amounts-left li {
+	background: red;
+	display: inline-block;
+	color: #ffffff;
+	margin: 2px;
+	padding: 5px;
+}
