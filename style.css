@@ -30,3 +30,11 @@ p, h2, ul {
 	margin: 2px;
 	padding: 5px;
 }
+
+.amounts-left li.blue {
+	background: blue;
+}
+
+.amounts-left li:before {
+	content: "£";
+}
