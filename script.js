@@ -275,6 +275,16 @@ DOND.Gameplay = function() {
 			chosenNumBox.empty().append("<p>Your box is number " + initialChosenNum + "</p>").show();
 			gameInstructions.empty().append("<p>You've got your box now lets play the game. Pick 5 boxes</p>");
 
+			// Sort the array into numerical order
+			moneyRandomSorted = moneyRandom.sort(function(a, b){return a-b}); 
+
+			// Loop and output remaining values from array
+			for (i = 0; i < moneyRandomSorted.length; i++) {
+
+			    amountsLeftP.show().append("<li>" + moneyRandomSorted[i] + "</li>");
+
+			} 
+
 			gameActive()
 
 		});
